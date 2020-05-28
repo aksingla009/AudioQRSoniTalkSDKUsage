@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Settings">
+
+        <EditTextPreference
+            android:defaultValue="18000"
+            android:inputType="number"
+            android:key="etprefFrequencyZero"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/settings_frequency0_text" />
+        <EditTextPreference
+            android:defaultValue="100"
+            android:key="etprefBitperiod"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:inputType="number"
+            android:title="@string/settings_bitperiod_text" />
+        <EditTextPreference
+            android:defaultValue="0"
+            android:key="etprefPauseperiod"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:inputType="number"
+            android:title="@string/settings_pauseperiod_text" />
+        <EditTextPreference
+            android:defaultValue="100"
+            android:key="etprefFrequencyspace"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:inputType="number"
+            android:title="@string/settings_frequencyspace_text" />
+        <EditTextPreference
+            android:defaultValue="18"
+            android:key="etprefNMaxBytes"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:inputType="number"
+            android:title="@string/settings_maxbytes_text" />
+        <ListPreference
+            android:key="lpprefNFrequencies"
+            android:title="@string/settings_numberoffrequencies_text"
+            android:entries="@array/numberOfFrequenciesVisible"
+            android:entryValues="@array/numberOfFrequencies" />
+        <EditTextPreference
+            android:key="sbprefLoudness"
+            android:title="@string/settings_loudness_text"
+            android:defaultValue="70"
+            android:inputType="number"/>
+        <Preference
+            android:key="setPresetPreferences"
+            android:title="@string/settings_preset_title"></Preference>
+        <Preference
+            android:key="resetPreferences"
+            android:title="@string/settings_reset_title"></Preference>
+    </PreferenceCategory>
+</PreferenceScreen>
